@@ -1,8 +1,8 @@
 """ PowerBall Generator
 Sets the play option to 'y' so the code will run automatically once. 
 After, it'll ask the user each time to run. When it runs, it starts with 3 lists. 
-The first is for the white balls from 1-69, the second is for the red balls from 1-25, 
-and the last is an empty list to store 5 random numbers from the white ball list. 
+The first is for the white balls from 1-69, 
+the second is an empty list to store 5 random numbers from the white ball list. 
 Next, the power ball is picked at random. Then the for loop will repeat 5 times,
 picking a random number from the white balls list, appending it to the empty ticket
 numbers list, and removing the value so it doesn't get used again. Finally, we print the winning
@@ -13,8 +13,8 @@ PLAY = 'y'
 
 while PLAY == 'y':
     white_ball = list(range(1, 70))
-    powerball = random.randint(1, 27)
     ticket_numbers = []
+    powerball = random.randint(1, 27)
 
     for i in range(5):
         random_num = random.choice(white_ball)
