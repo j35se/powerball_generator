@@ -13,9 +13,8 @@ PLAY = 'y'
 
 while PLAY == 'y':
     white_ball = list(range(1, 70))
-    red_ball = list(range(1, 26))
+    powerball = random.randint(1, 27)
     ticket_numbers = []
-    powerball = random.choice(red_ball)
 
     for i in range(5):
         random_num = random.choice(white_ball)
